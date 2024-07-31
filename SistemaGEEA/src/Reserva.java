@@ -82,7 +82,11 @@ public class Reserva {
         return this.horario;
     }
     
-    public void taAprovado(boolean SouN) {
+    public void confirmarReserva(boolean SouN) {
     	//metodo para verificar se uma reserva esta aprovada ou nao, baseada na resposta o sistema deve aprovar e confirmar ao usuario q solicitou a reserva
+    }
+    
+    public void cancelarReserva(Reserva reserva, Usuario usuario) {
+    	//metodo de cancelar reserva, deve se comunicar com os adminstradores e atualizar a disponibilidade dos artefatos do estoque do sistema.
     }
 }

@@ -29,4 +29,18 @@ public class Professor extends Usuario{
     	reserva.setHorario(horario);
     	//confirmarReserva(reserva);
     } //metodo solicitarEspaco que permite que o usuario do tipo professor solicitar uma reserva de espaco a ser aprovada
+
+    public void visualizarEstoque() {
+    	//metodo visualizarEstoque, onde os professores devem ser capazes de visualizar 
+    }
+    
+    public void solicitarManutencao(Aluno aluno, Equipamento equip, String descricao) {
+    	/**metodo solicitarManutencao, que deve permitir que o usuario solicite a manutencao de um determinado equipamento; este metodo deve se
+    	comunicar com a classe Administrador**/
+    }
+    
+    public void solicitarManutencao(Aluno aluno, Espaco espaco, String descricao) {
+    	/**metodo solicitarManutencao, que deve permitir que o usuario solicite a manutencao de um determinado espaco, geralmente relacionado a limpeza; este metodo deve se
+    	comunicar com a classe Administrador**/
+    }
 }

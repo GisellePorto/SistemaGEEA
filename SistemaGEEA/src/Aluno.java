@@ -26,6 +26,16 @@ public class Aluno extends Usuario{
     de visualizar todo o estoque de artefatos do sistema**/
     
     public void visualizarEstoque() {
-    	
+    	//metodo visualizarEstoque, onde o aluno deve ser capaz de visualizar os espacos e equipamentos disponiveis no sistema
+    }
+    
+    public void solicitarManutencao(Aluno aluno, Equipamento equip, String descricao) {
+    	/**metodo solicitarManutencao, que deve permitir que o usuario solicite a manutencao de um determinado equipamento; este metodo deve se
+    	comunicar com a classe Administrador**/
+    }
+    
+    public void solicitarManutencao(Aluno aluno, Espaco espaco, String descricao) {
+    	/**metodo solicitarManutencao, que deve permitir que o usuario solicite a manutencao de um determinado espaco, geralmente relacionado a limpeza; este metodo deve se
+    	comunicar com a classe Administrador**/
     }
 }
