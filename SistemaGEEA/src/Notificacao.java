@@ -23,4 +23,8 @@ public class Notificacao {
     public String getMensagem(){
         return this.mensagem;
     }
+    
+    public void enviarNotificacao() {
+    	//metodo p implementar a possibilidade de notificacao de confirmacao de reserva aos usuarios
+    }
 }
