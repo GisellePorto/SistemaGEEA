@@ -10,7 +10,7 @@ public class Reserva {
     
     public Reserva() {}
     
-    public Reserva(String identificador, Espaco espaco, LocalDateTime horario, String descricao, boolean aprovacao){
+    public Reserva(String identificador, Espaco espaco, LocalDateTime horario, String descricao){
         setUsuario(usuario);
         setEspaco(espaco);
         setHorario(horario);

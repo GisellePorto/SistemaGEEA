@@ -29,5 +29,4 @@ public class Professor extends Usuario{
     	reserva.setHorario(horario);
     	//confirmarReserva(reserva);
     } //metodo solicitarEspaco que permite que o usuario do tipo professor solicitar uma reserva de espaco a ser aprovada
-
 }
