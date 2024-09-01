@@ -1,24 +1,25 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Estoque {
-	private ArrayList<Espaco> espacos;
-	private ArrayList<Equipamento> equipamentos;
+	private List<Espaco> espacos;
+	private List<Equipamento> equipamentos;
 
 
-	public ArrayList<Espaco> getEspacos() {
+	public List<Espaco> getEspacos() {
 		return espacos;
 	}
-	public ArrayList<Equipamento> getEquipamentos() {
+	public List<Equipamento> getEquipamentos() {
 		return equipamentos;
 	}
 
-	public void setEspacos(ArrayList<Espaco> espacos) {
+	public void setEspacos(List<Espaco> espacos) {
 		this.espacos = espacos;
 	}
 
-	public void setEquipamentos(ArrayList<Equipamento> equipamentos) {
+	public void setEquipamentos(List<Equipamento> equipamentos) {
 		this.equipamentos = equipamentos;
 	}
 }
