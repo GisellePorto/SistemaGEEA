@@ -1,11 +1,12 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class GerenciaReserva {
-    private ArrayList<Reserva> reservasPendentes;
-    private ArrayList<Reserva> reservasRejeitadas;
-    private ArrayList<Reserva> reservasAprovadas;
+    private List<Reserva> reservasPendentes;
+    private List<Reserva> reservasRejeitadas;
+    private List<Reserva> reservasAprovadas;
 
 
     public GerenciaReserva() {
@@ -28,7 +29,7 @@ public class GerenciaReserva {
         } else {
             System.out.println("Reserva não encontrada entre as pendentes.");
         }
-    } 
+    }
 
     //metodo rejeitarReserva, nele o administrador deve ser capaz de rejeitar o pedido de reserva recebido
     public void rejeitarReserva(Reserva reserva) {
