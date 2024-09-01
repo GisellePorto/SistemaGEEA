@@ -1,3 +1,5 @@
+package model;
+
 public class Credenciais {
     private String identificadorDeAcesso;
     private String senha;
