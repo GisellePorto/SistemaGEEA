@@ -1,3 +1,5 @@
+package model;
+
 public class Espaco {
     private String nome;
     private boolean disponibilidade;
@@ -7,21 +9,21 @@ public class Espaco {
         setNome(nome);
         setDisponibilidade(disponibilidade);
     }
-    
+
     private void setDisponibilidade(boolean disponibilidade) {
-    	
+
     }
-    
-	private void setNome(String nome){
+
+    private void setNome(String nome){
         this.nome = nome;
     }
 
     public String getNome(){
         return this.nome;
     }
-    
+
     public boolean getDisponibilidade() {
-    	return this.disponibilidade;
+        return this.disponibilidade;
     }
 
 }
