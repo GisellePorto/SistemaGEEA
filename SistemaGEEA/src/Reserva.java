@@ -1,61 +1,50 @@
-import java.time.LocalDateTime;
+package model;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.ArrayList;
 
 public class Reserva {
     private Usuario usuario;
     private Espaco espaco;
     private Equipamento equipamento;
-    private LocalDateTime horario;
+    private LocalTime horario;
+    private LocalDate data;
     private String descricao;
     private boolean aprovacao = false;
-    
-    public Reserva() {}
-    
-    public Reserva(String identificador, Espaco espaco, LocalDateTime horario, String descricao){
-        setUsuario(usuario);
-        setEspaco(espaco);
-        setHorario(horario);
-        setDescricao(descricao);
-    }
-    
-    public Reserva(String identificador, Equipamento equipamento, LocalDateTime horario, String descricao){
-        setUsuario(usuario);
-        setEquipamento(equipamento);
-        setHorario(horario);
-        setDescricao(descricao);
-    }
-    
-/**    public Reserva(Usuario usuario, Espaco espaco, Equipamento equipamento, LocalDateTime horario, String descricao){
-        setUsuario(usuario);
-        setEspaco(espaco);
-        setEquipamento(equipamento);
-        setHorario(horario);
-   
-    setDescricao(descricao);
-    }**/ 
+    private static ArrayList<Reserva> reservas = new ArrayList<>();
 
-    
+
+
+    public Reserva(Usuario usuario, Espaco espaco, LocalTime horario, LocalDate data, String descricao){
+        this.usuario = usuario;
+        this.espaco = espaco;
+        this.horario = horario;
+        this.data = data;
+        this.descricao = descricao;
+    }
+
     public String getDescricao() {
-		return descricao;
-	}
+        return descricao;
+    }
 
-	public boolean isAprovacao() {
-	return aprovacao;
-	}
+    public boolean isAprovacao() {
+        return aprovacao;
+    }
 
-	public void setAprovacao(boolean aprovacao) {
-	this.aprovacao = aprovacao;
-	}
+    public void setAprovacao(boolean aprovacao) {
+        this.aprovacao = aprovacao;
+    }
 
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
-	}
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
 
-	public void setUsuario(Usuario usuario){
+    public void setUsuario(Usuario usuario){
         this.usuario = usuario;
     }
 
     public Usuario getUsuario(){
-        return this.usuario;
+        return usuario;
     }
 
     public void setEspaco(Espaco espaco){
@@ -74,19 +63,27 @@ public class Reserva {
         return this.equipamento;
     }
 
-    public void setHorario(LocalDateTime horario){
+    public void setHorario(LocalTime horario){
         this.horario = horario;
     }
 
-    public LocalDateTime getHorario(){
+    public LocalTime getHorario(){
         return this.horario;
     }
-    
-    public void confirmarReserva(boolean SouN) {
-    	//metodo para verificar se uma reserva esta aprovada ou nao, baseada na resposta o sistema deve aprovar e confirmar ao usuario q solicitou a reserva
+
+    public LocalDate getData(){
+        return data;
     }
-    
-    public void cancelarReserva(Reserva reserva, Usuario usuario) {
-    	//metodo de cancelar reserva, deve se comunicar com os adminstradores e atualizar a disponibilidade dos artefatos do estoque do sistema.
+
+    public void setData(LocalDate data){
+        this.data = data;
+    }
+
+    public void confirmarReserva(boolean SouN) {
+        //metodo para verificar se uma reserva esta aprovada ou nao, baseada na resposta o sistema deve aprovar e confirmar ao usuario q solicitou a reserva
+    }
+
+    public void cancelarReserva(Reserva reserva, Usuario usuario, String descricao) {
+        //metodo de cancelar reserva, deve se comunicar com os adminstradores e atualizar a disponibilidade dos artefatos do estoque do sistema.
     }
 }
