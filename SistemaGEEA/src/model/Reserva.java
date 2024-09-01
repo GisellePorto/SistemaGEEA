@@ -6,6 +6,7 @@ import java.util.ArrayList;
 public class Reserva {
     private Usuario usuario;
     private Espaco espaco;
+    private boolean disponivel;
     private Equipamento equipamento;
     private LocalTime horario;
     private LocalDate data;
@@ -23,8 +24,13 @@ public class Reserva {
         this.descricao = descricao;
     }
 
-    public String getDescricao() {
-        return descricao;
+
+    public void setUsuario(Usuario usuario){
+        this.usuario = usuario;
+    }
+
+    public Usuario getUsuario(){
+        return usuario;
     }
 
     public boolean isAprovacao() {
@@ -35,17 +41,14 @@ public class Reserva {
         this.aprovacao = aprovacao;
     }
 
+    public String getDescricao() {
+        return descricao;
+    }
+
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
 
-    public void setUsuario(Usuario usuario){
-        this.usuario = usuario;
-    }
-
-    public Usuario getUsuario(){
-        return usuario;
-    }
 
     public void setEspaco(Espaco espaco){
         this.espaco = espaco;
@@ -53,6 +56,14 @@ public class Reserva {
 
     public Espaco getEspaco(){
         return this.espaco;
+    }
+
+    public boolean isDisponivel() {
+        return disponivel;
+    }
+
+    public void setDisponivel(boolean disponivel) {
+        this.disponivel = disponivel;
     }
 
     public void setEquipamento(Equipamento equipamento){
@@ -86,4 +97,7 @@ public class Reserva {
     public void cancelarReserva(Reserva reserva, Usuario usuario, String descricao) {
         //metodo de cancelar reserva, deve se comunicar com os adminstradores e atualizar a disponibilidade dos artefatos do estoque do sistema.
     }
+
+
+
 }
