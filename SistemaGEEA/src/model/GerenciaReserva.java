@@ -4,16 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GerenciaReserva {
-    private List<Reserva> reservasPendentes;
-    private List<Reserva> reservasRejeitadas;
-    private List<Reserva> reservasAprovadas;
+    private List<Reserva> reservasPendentes = new ArrayList<>();
+    private List<Reserva> reservasRejeitadas = new ArrayList<>();
+    private List<Reserva> reservasAprovadas = new ArrayList<>();
 
 
-    public GerenciaReserva() {
-        this.reservasPendentes = new ArrayList<>();
-        this.reservasRejeitadas = new ArrayList<>();
-        this.reservasAprovadas = new ArrayList<>();
-    }
+
 
 
     public void criaReserva(Reserva reserva) {

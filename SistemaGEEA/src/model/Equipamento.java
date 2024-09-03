@@ -5,15 +5,13 @@ import java.time.LocalDate;
 public class Equipamento {
     private String nome;
     private boolean disponibilidade = true;
-    private Equipamento equipamento;
     private LocalTime horario;
     private LocalDate data;
     private String descricao;
 
 
-    public Equipamento(String nome,Equipamento equipamento, LocalTime horario, LocalDate data, String descricao) {
+    public Equipamento(String nome, LocalTime horario, LocalDate data, String descricao) {
         this.nome = nome;
-        this.equipamento = equipamento;
         this.horario = horario;
         this.data = data;
         this.descricao = descricao;
@@ -36,20 +34,8 @@ public class Equipamento {
     public String getNome(){
         return this.nome;
     }
-    public int getNumSerie(){
-        return numSerie;
-    }
-    public void setNumSerie(int numSerie){
-        this.numSerie = numSerie;
-    }
     public String getDescricao() {
         return descricao;
-    }
-    public Equipamento getEquipamento(){
-        return this.equipamento;
-    }
-    public void setEquipamento(Equipamento equipamento){
-        this.equipamento = equipamento;
     }
     public void setDescricao(String descricao) {
         this.descricao = descricao;

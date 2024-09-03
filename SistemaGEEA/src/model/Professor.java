@@ -21,8 +21,10 @@ public class Professor extends Usuario{
         this.loginSIGAA = loginSIGAA;
     }
 
-    public void solicitarEquipamento(String nome,Equipamento equipamento, LocalTime horario, LocalDate data, String descricao){
-        Equipamento equip= new Equipamento(nome,equipamento,horario,data,descricao);
+    public void solicitarEquipamento(String nome,LocalTime horario, LocalDate data, String descricao){
+        Equipamento equipamento= new Equipamento(nome,horario,data,descricao);
+        GerenciaEquipamento gerenciaEquipamento = new GerenciaEquipamento();
+        gerenciaEquipamento.addEquipamentoPendente(equipamento);
 
         //.confirmarReserva(reserva);
     } //metodo solicitarEquipamento que permite que o usuario do tipo professor solicitar uma reserva de equipamento a ser aprovada
