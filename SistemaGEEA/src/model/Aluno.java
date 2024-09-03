@@ -20,8 +20,8 @@ public class Aluno extends Usuario {
     }
 
     //metodo solicitar:
-    public void solicitarEquipamento(String nome, Equipamento equipamento, LocalTime horario, LocalDate data, String descricao) {
-        Equipamento equipament = new Equipamento(nome, equipamento, horario, data, descricao);
+    public void solicitarEquipamento(String nome, LocalTime horario, LocalDate data, String descricao) {
+        Equipamento equipamento = new Equipamento(nome, horario, data, descricao);
 
 //esboco da classe de solicitacao de equipamentos, onde o aluno deve ser capaz de solicitar uma reserva a ser aprovada ou nao pelo administrador
     }
