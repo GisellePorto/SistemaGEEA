@@ -19,6 +19,8 @@ public class GerenciaEquipamento {
             System.out.println("Manutenção não encontrada na lista de pendentes.");
         }
     }
+
+
     public List<Equipamento> getEquipamentosPendentes() {
         return equipamentosPendentes;
     }
@@ -35,11 +37,9 @@ public class GerenciaEquipamento {
         this.equipamentosDisponiveis = equipamentosDisponiveis;
     }
 
-    public void  aprovarSolicitacao(List<Equipamento> solicitacaoPendente){
-
+    public void equipamentosDisponiveis(List<Equipamento> equipamentosDisponiveis){
+        System.out.println("Estoques disponiveis" + equipamentosDisponiveis );
     }
-
-    public void equipamentosDisponiveis(List<Equipamento> equipamentosDisponiveis){}
 
     public void equipamentosPendentes(){}
 
