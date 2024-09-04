@@ -1,4 +1,4 @@
-package model;
+package main.java.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +9,9 @@ public class GerenciaEquipamento {
     private List<Equipamento> equipamentosPendentes =  new ArrayList<>();
     private List<Equipamento> equipamentosConcluidos =  new ArrayList<>();
 
+    public void addEquipamento(Equipamento equipamento){
+       equipamentosDisponiveis = (List<Equipamento>) equipamento;
+    }
     public  void addEquipamentoPendente(Equipamento equipamento) {
         equipamentosPendentes.add(equipamento);
     }
