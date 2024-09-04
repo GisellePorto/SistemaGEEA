@@ -1,9 +1,11 @@
-package main.java.model;
+package main.java.controller;
+
+import main.java.model.SolicitarManutencao;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class GerenciaManutencao {
+public class controllerManutencao {
     private List<SolicitarManutencao> manutencoesPendentes = new ArrayList<>();
     private List<SolicitarManutencao> manutencoesConcluidas = new ArrayList<>();
 
@@ -30,3 +32,5 @@ public class GerenciaManutencao {
 
 
 }
+
+
