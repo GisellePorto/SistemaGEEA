@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Avatar?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 0% 100% to 0% 0%, #FCE5E6, #DDEEF8);" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fitHeight="78.0" fitWidth="91.0" layoutX="536.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@image-5.png" />
+            </image>
+        </ImageView>
+        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="600.0" spacing="480.0">
+            <children>
+                <Label text="GEEA">
+                    <font>
+                        <Font name="Helvetica Neue" size="20.0" />
+                    </font>
+                </Label>
+                <Avatar>
+                    <image>
+                        <Image url="@macro-eye-iris-details.jpg" />
+                    </image>
+                </Avatar>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" layoutY="58.0" prefHeight="281.0" prefWidth="600.0" spacing="20.0">
+            <children>
+                <Button mnemonicParsing="false" prefHeight="110.0" prefWidth="146.0" style="-fx-background-color: linear-gradient(from 0% 100% to 0% 0%, #6229EE, #9267FE); -fx-background-radius: 20; -fx-padding: 8;" text="ESPAÇOS" textFill="WHITE">
+                    <font>
+                        <Font name="Helvetica Neue Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" prefHeight="110.0" prefWidth="146.0" style="-fx-background-color: linear-gradient(from 0% 100% to 0% 0%, #6229EE, #9267FE); -fx-background-radius: 20; -fx-padding: 8;" text="EQUIPAMENTOS" textFill="WHITE">
+                    <font>
+                        <Font name="Helvetica Neue Bold" size="12.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</Pane>
